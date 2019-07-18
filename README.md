@@ -1,3 +1,5 @@
+# ad hoc analyses of three RSeQC runs
+
 ## bam_stat
 
 ## clipping_profile
@@ -23,7 +25,12 @@ legend("topright",c('K562','ARVM-g1','ARVM-g2'),col=c('blue','red','darkgreen'),
 ## infer_experiment
 
 ## inner_distance
-
+```sh
+grep 'fragsize=' inner_distance/*.r|sed 's/inner_distance\//data.frame(sample="/;s/\.inner_distance.*:/",/' > p.r
+```
+```r
+ggplot(df, aes(x=fragsize, color=sample)) + geom_density()
+```
 ## insertion_profile
 
 ## junction_annotation
