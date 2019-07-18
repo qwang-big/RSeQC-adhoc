@@ -32,7 +32,9 @@ grep 'fragsize=' inner_distance/*.r|sed 's/inner_distance\//data.frame(sample="/
 ggplot(df, aes(x=fragsize, color=sample)) + geom_density()
 ```
 ## insertion_profile
-
+```sh
+for f in insertion_profile/*.r; do sed -n '2,5 p' $f; done |tr '\n' ';'| sed 's/plot/lines/2g;s/blue/red/2;s/blue/darkgreen/2' > p.r
+```
 ## junction_annotation
 
 ## junction_saturation
