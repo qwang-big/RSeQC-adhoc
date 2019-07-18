@@ -1,53 +1,53 @@
-#bam_stat
+## bam_stat
 
-#clipping_profile
+## clipping_profile
 
-#deletion_profile
+## deletion_profile
 
-#divide_bam
+## divide_bam
 
-#FPKM_count
+## FPKM_count
 
-#geneBody_coverage
+## geneBody_coverage
 
-#geneBody_coverage2
+## geneBody_coverage2
 
-#infer_experiment
+## infer_experiment
 
-#inner_distance
+## inner_distance
 
-#insertion_profile
+## insertion_profile
 
-#junction_annotation
+## junction_annotation
 
-#junction_saturation
+## junction_saturation
 
-#mismatch_profile
+## mismatch_profile
 
-#normalize_bigwig
+## normalize_bigwig
 
-#overlay_bigwig
+## overlay_bigwig
 
-#read_distribution
+## read_distribution
 
-#read_duplication
+## read_duplication
 
-#read_GC
+## read_GC
 
-#read_hexamer
+## read_hexamer
 
-#read_NVC
+## read_NVC
 
-#read_quality
+## read_quality
 
-#RNA_fragment_size
+## RNA_fragment_size
 
-#RPKM_count
+## RPKM_count
 
-#RPKM_saturation
+## RPKM_saturation
 
-#spilt_bam
+## spilt_bam
 
-#split_paired_bam
+## split_paired_bam
 
-#tin.py
+## tin.py
