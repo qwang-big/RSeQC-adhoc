@@ -1,9 +1,17 @@
 ## bam_stat
 
 ## clipping_profile
-
+```sh
+for f in clipping_profile/*.r; do sed -n '2,4 p' $f; done
+```
 ## deletion_profile
-
+```sh
+for f in deletion_profile/*.r; do sed -n '2,4 p' $f; done |tr '\n' ';'| sed 's/plot/lines/2g;s/blue/red/2;s/blue/darkgreen/2' > p.r
+```
+```r
+source('p.r')
+legend("topright",c('ARVM-g1','ARVM-g2','K562'),col=c('blue','red','darkgreen'),lty=1,lwd=2)
+```
 ## divide_bam
 
 ## FPKM_count
@@ -50,4 +58,4 @@
 
 ## split_paired_bam
 
-## tin.py
+## tin
