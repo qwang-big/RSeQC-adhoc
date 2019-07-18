@@ -10,7 +10,7 @@ for f in deletion_profile/*.r; do sed -n '2,4 p' $f; done |tr '\n' ';'| sed 's/p
 ```
 ```r
 source('p.r')
-legend("topright",c('ARVM-g1','ARVM-g2','K562'),col=c('blue','red','darkgreen'),lty=1,lwd=2)
+legend("topright",c('K562','ARVM-g1','ARVM-g2'),col=c('blue','red','darkgreen'),lty=1,lwd=2)
 ```
 ## divide_bam
 
