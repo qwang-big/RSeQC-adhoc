@@ -34,6 +34,7 @@ ggplot(df, aes(x=fragsize, color=sample)) + geom_density()
 ## insertion_profile
 ```sh
 for f in insertion_profile/*.r; do sed -n '2,5 p' $f; done |tr '\n' ';'| sed 's/plot/lines/2g;s/blue/red/2;s/blue/darkgreen/2' > p.r
+for f in insertion_profile/*.r; do sed -n '8,11 p' $f; done |tr '\n' ';'| sed 's/plot/lines/2g;s/blue/red/2;s/blue/darkgreen/2' > p1.r
 ```
 ## junction_annotation
 
